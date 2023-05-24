@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Meta tags obrigatórias -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Biblioteca jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Script de pesquisa -->
+  <script type="text/javascript" src="/wireframes/jssearch.js"></script>
+
+  <!-- Ícones do Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>Prototype</title>
+
+  <!-- Script customizado -->
+  <script src="./script.js"></script>
+</head>
+
+
+<body>
+  <!-- Barra de navegação superior -->
+  <div id="nav-top">
+    <div id="icons">
+      <!-- Botão com ícone "home" -->
+      <button class="navBarHover iconhome" type="button">
+        <i class="bi bi-house" title="Página inicial"></i>
+      </button>
+
+
+      <!-- Botão com ícone de perigo/exclamação -->
+      <button class="navBarHover icondanger" type="button">
+        <i class="bi bi-exclamation-triangle" title="Avisos"></i>
+      </button>
+
+      <!-- Botão com ícone de status/clipboard -->
+      <button class="navBarHover iconstatus" type="button">
+        <i class="bi bi-clipboard2-data" title="DashBoards"></i>
+      </button>
+
+      <!-- Botão com ícone de bulsola -->
+      <button class="navBarHover iconmapping" type="button">
+        <i class="bi bi-compass" title="Localização"></i>
+      </button>
+
+      <!-- Botão com ícone de mapa -->
+      <button class="navBarHover iconmaps" type="button">
+        <i class="bi bi-map" title="Mapeamentos"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Botão de menu hamburguer -->
+  <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+    <span class="hamb-top"></span>
+    <span class="hamb-middle"></span>
+    <span class="hamb-bottom"></span>
+  </button>
+
+  <!-- Área principal do conteúdo -->
+  <div id="wrapper">
+    <div class="overlay"></div>
+
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
+      <ul class="nav sidebar-nav">
+        <li>
+          <!-- Ícone da conexão -->
+          <button id="icons-sidebar" class="custom-button">
+            <i class="bi bi-wifi"></i> Conexão
+          </button>
+        </li>
+
+        <li>
+          <!-- Ícone das configurações -->
+          <button id="icons-sidebar" class="custom-button">
+            <i class="bi bi-gear"></i> Configurações
+          </button>
+        </li>
+
+        <li>
+          <!-- Ícone de ajuda -->
+          <button id="icons-sidebar" class="custom-button">
+            <i class="bi bi-question-circle"></i> Ajuda
+          </button>
+        </li>
+      </ul>
+
+      <ul>
+        <!-- Botão de sair -->
+        <div class="exit-button">
+          <button class="btn btn-outline-light btn-block">
+            <i class="bi bi-box-arrow-right"></i> Sair
+          </button>
+        </div>
+      </ul>
+
+    </nav>
+  </div>
+</body>
+
+</html>
