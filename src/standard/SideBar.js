@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const SideBar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleSidebar = () => {
+        setIsOpen(!isOpen);
+    };
+
     return (
         <>
-            <div>
+            <div id="wrapper" className={isOpen ? 'toggled' : ''}>
                 {/* Botão de menu hamburguer */}
-                <button type="button" className="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+                <button
+                    type="button"
+                    className={`hamburger animated fadeInLeft ${isOpen ? 'is-open' : 'is-closed'}`}
+                    data-toggle="offcanvas"
+                    onClick={toggleSidebar}
+                >
                     <span className="hamb-top"></span>
                     <span className="hamb-middle"></span>
                     <span className="hamb-bottom"></span>
