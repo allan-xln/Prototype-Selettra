@@ -1,18 +1,19 @@
 import React from 'react';
-import NavBar from './standard/NavBar';
-import SideBar from './standard/SideBar';
+import NavBar from './Components/NavBar';
+import SideBar from './Components/SideBar';
 import './Navbar.css';
-import './homepage.css';
-import './buttons.css';
+import './pages/Home/Home';
+import './Components/buttons.css';
 import './index.js';
-import './script.js';
+import './Components/script.js';
+import './pages/Reports/Reports.css'
+
 
 function App() {
   return (
     <>
       <NavBar />
       <SideBar />
-
     </>
   );
 }
