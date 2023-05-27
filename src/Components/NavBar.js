@@ -3,7 +3,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import Home from '../pages/Home/Home';
 import Reports from '../pages/Reports/Reports';
-import Logo from '../assets/selettra-Logo (2).png'
+import History from '../pages/History/History'
+import Logo from '../pages/assets/selettra-Logo (2).png'
 import Selettra from './Selettra';
 
 
@@ -28,10 +29,12 @@ const NavBar = () => {
                         </Link>
 
                         {/* Botão com ícone de status/clipboard */}
-                        <button style={{width: '50px'}} className="navBarHover iconstatus" type="button">
-                            <i className="bi bi-clipboard2-data" title="DashBoards" ></i>
-                        </button>
-
+                        <Link to="/History">
+                            <button style={{width: '50px'}} className="navBarHover iconstatus" type="button">
+                                <i className="bi bi-clipboard2-data" title="DashBoards" ></i>
+                            </button>
+                        </Link>
+                    
                         {/* Botão com ícone de bússola */}
                         <button  style={{width: '50px'}}className="navBarHover iconmapping" type="button">
                             <i className="bi bi-compass" title="Localização" ></i>
@@ -61,11 +64,14 @@ const NavBar = () => {
                         </Route>
                         <Route exact path='/Reports'
                             element={<Reports />}>
-                    </Route>
-                    <Route exact path='/Selettra'
-                        element={<Selettra />}>
                         </Route>
-                    </Routes>
+                        <Route exact path='/History'
+                                element={<History />}>
+                        </Route>
+                        <Route exact path='/Selettra'
+                            element={<Selettra />}>
+                            </Route>
+                        </Routes>
             </Router>
 
             {/* Área principal do conteúdo */}
