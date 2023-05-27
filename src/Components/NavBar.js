@@ -3,7 +3,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import Home from '../pages/Home/Home';
 import Reports from '../pages/Reports/Reports';
-
+import Logo from '../assets/selettra-Logo (2).png'
+import Selettra from './Selettra';
 
 
 const NavBar = () => {
@@ -12,43 +13,58 @@ const NavBar = () => {
             <Router>
                 <div id="nav-top">
                     <div id="icons">
+                        
                         {/* Botão com ícone "home" */}
                         <Link to="/">
-                            <button className="navBarHover iconhome" type="button">
+                            <button style={{width: '50px'}} className="navBarHover iconhome" type="button">
                                 <i className="bi bi-house" title="Página inicial" ></i>
                             </button>
                         </Link>
                         {/* Botão com ícone de perigo/exclamação */}
                         <Link to="/Reports">
-                            <button className="navBarHover icondanger" type="button">
+                            <button  style={{width: '50px'}} className="navBarHover icondanger" type="button">
                                 <i className="bi bi-exclamation-triangle" title="Avisos" ></i>
                             </button>
                         </Link>
 
                         {/* Botão com ícone de status/clipboard */}
-                        <button className="navBarHover iconstatus" type="button">
+                        <button style={{width: '50px'}} className="navBarHover iconstatus" type="button">
                             <i className="bi bi-clipboard2-data" title="DashBoards" ></i>
                         </button>
 
                         {/* Botão com ícone de bússola */}
-                        <button className="navBarHover iconmapping" type="button">
+                        <button  style={{width: '50px'}}className="navBarHover iconmapping" type="button">
                             <i className="bi bi-compass" title="Localização" ></i>
                         </button>
 
                         {/* Botão com ícone de mapa */}
-                        <button className="navBarHover iconmaps" type="button">
+                        <button style={{width: '50px'}} className="navBarHover iconmaps" type="button">
                             <i className="bi bi-map" title="Mapeamentos" ></i>
                         </button>
-
+                        <Link to='/Selettra' target="_blank">
+                            <img  style={{ 
+                                        display: 'flexbox',
+                                        marginTop: '15px',
+                                        paddingLeft: '26em',
+                                        height: "38px",
+                                        cursor: "pointer",
+                                    }}
+                                    
+                                    src={Logo} alt="Logo"></img>
+                        </Link>
+                            
                     </div>
                 </div>
                     <Routes>
                         <Route exact path='/'
                             element={<Home />} >
                         </Route>
-                            <Route exact path='/Reports'
+                        <Route exact path='/Reports'
                             element={<Reports />}>
-                            </Route>
+                    </Route>
+                    <Route exact path='/Selettra'
+                        element={<Selettra />}>
+                        </Route>
                     </Routes>
             </Router>
 

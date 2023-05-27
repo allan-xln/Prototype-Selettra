@@ -6,6 +6,7 @@ import './pages/Home/Home';
 import './Components/buttons.css';
 import './index.js';
 import './Components/script.js';
+import './pages/Reports/Reports.css'
 
 
 function App() {
