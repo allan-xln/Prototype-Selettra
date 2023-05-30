@@ -162,3 +162,26 @@
     opacity: 1;
     visibility: visible;
 }
+
+@media only screen and (max-width: 768px) {
+    .selettra {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .selettra {
+        margin-top: 5px;
+        padding-left: 0em;
+        height: 0px;
+    }
+}
+
+.selettra {
+    display: flexbox;
+    margin-top: 15px;
+    padding-left: 26em;
+    height: 38px;
+    cursor: pointer;
+
+}

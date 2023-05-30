@@ -17,41 +17,35 @@ const NavBar = () => {
                         
                         {/* Botão com ícone "home" */}
                         <Link to="/">
-                            <button style={{width: '50px'}} className="navBarHover iconhome" type="button">
+                            <button style={{width: '50px', minWidth: '20px'}} className="navBarHover iconhome" type="button">
                                 <i className="bi bi-house" title="Página inicial" ></i>
                             </button>
                         </Link>
                         {/* Botão com ícone de perigo/exclamação */}
                         <Link to="/Reports">
-                            <button  style={{width: '50px'}} className="navBarHover icondanger" type="button">
+                            <button  style={{width: '50px', minWidth: '50px'}} className="navBarHover icondanger" type="button">
                                 <i className="bi bi-exclamation-triangle" title="Avisos" ></i>
                             </button>
                         </Link>
 
                         {/* Botão com ícone de status/clipboard */}
                         <Link to="/History">
-                            <button style={{width: '50px'}} className="navBarHover iconstatus" type="button">
+                            <button style={{width: '50px', minWidth: '50px'}} className="navBarHover iconstatus" type="button">
                                 <i className="bi bi-clipboard2-data" title="DashBoards" ></i>
                             </button>
                         </Link>
                     
                         {/* Botão com ícone de bússola */}
-                        <button  style={{width: '50px'}}className="navBarHover iconmapping" type="button">
+                        <button  style={{width: '50px', minWidth: '50px'}}className="navBarHover iconmapping" type="button">
                             <i className="bi bi-compass" title="Localização" ></i>
                         </button>
 
                         {/* Botão com ícone de mapa */}
-                        <button style={{width: '50px'}} className="navBarHover iconmaps" type="button">
+                        <button style={{width: '50px', minWidth: '50px'}} className="navBarHover iconmaps" type="button">
                             <i className="bi bi-map" title="Mapeamentos" ></i>
                         </button>
                         <Link to='/Selettra' target="_blank">
-                            <img  style={{ 
-                                        display: 'flexbox',
-                                        marginTop: '15px',
-                                        paddingLeft: '26em',
-                                        height: "38px",
-                                        cursor: "pointer",
-                                    }}
+                            <img class="selettra" 
                                     
                                     src={Logo} alt="Logo"></img>
                         </Link>
