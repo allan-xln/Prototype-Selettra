@@ -13,6 +13,7 @@ const SideBar = () => {
                 {/* Botão de menu hamburguer */}
                 <button
                     type="button"
+                    id='Hamburguer'
                     className={`hamburger animated fadeInLeft ${isOpen ? 'is-open' : 'is-closed'}`}
                     data-toggle="offcanvas"
                     onClick={toggleSidebar}

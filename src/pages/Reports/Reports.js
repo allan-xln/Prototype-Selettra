@@ -7,6 +7,7 @@ export default function Reports() {
             alignItems: 'center',
             alignContent: 'Center',
             justifyContent: 'center',
+            minHeight: '38vh',
             height: '38vh',
             paddingLeft: '15%',
             paddingRight: '15%',

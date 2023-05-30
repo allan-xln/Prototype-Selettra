@@ -1,4 +1,6 @@
 /* Estilos gerais */
+
+
 body {
     position: relative;
     overflow-x: hidden;
@@ -224,6 +226,14 @@ html {
 /*       Hamburger-Cross         */
 /*-------------------------------*/
 
+
+@media only screen and (max-width: 320px) {
+    .hamburguer {
+        height: 10px;
+        margin-left: 5px;
+        text-align: top;
+    }
+}
 .hamburger {
     position: fixed;
     top: 29px;
