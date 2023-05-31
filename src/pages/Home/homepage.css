@@ -122,3 +122,15 @@ h5 span{
 		margin: 0 auto;
 	}
 }
+
+#home.selected:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: red;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    z-index: 2;
+}

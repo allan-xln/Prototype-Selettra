@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import Home from '../pages/Home/Home';
@@ -8,7 +7,11 @@ import Logo from '../pages/assets/selettra-Logo (2).png'
 import Selettra from './Selettra';
 
 
+
 const NavBar = () => {
+
+    
+
     return (
         <>
             <Router>
@@ -17,7 +20,7 @@ const NavBar = () => {
                         
                         {/* Botão com ícone "home" */}
                         <Link to="/">
-                            <button style={{width: '50px', minWidth: '20px'}} className="navBarHover iconhome" type="button">
+                            <button id='home' style={{width: '50px', minWidth: '20px'}} className="navBarHover iconhome" type="button">
                                 <i className="bi bi-house" title="Página inicial" ></i>
                             </button>
                         </Link>
@@ -74,6 +77,8 @@ const NavBar = () => {
             </div>
         </>
     );
+    
 };
+
 
 export default NavBar;
