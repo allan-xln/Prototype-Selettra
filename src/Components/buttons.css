@@ -158,7 +158,7 @@
     visibility: visible;
 }
 
-
+/* Defines the attributes of the Selettra Logo2 */
 
 @media only screen and (max-width: 812px) {
     .selettra {
@@ -172,7 +172,7 @@
     }
 }
 
-/* Defines the attributes of the Selettra Logo */
+
 
 .selettra {
     display: flexbox;
@@ -183,4 +183,3 @@
     cursor: pointer;
 
 }
-
