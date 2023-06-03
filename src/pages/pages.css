@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+
+body {
+	background-color: #696969;
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+}
+
+.height {
+	height: 40vh;
+}
+
+
+.search {
+	position: relative;
+	box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+
+}
+
+.search input {
+
+	height: 60px;
+	text-indent: 25px;
+	border: 2px solid #d6d4d4;
+
+
+}
+
+
+.search input:focus {
+
+	box-shadow: none;
+
+
+}
+
+.search .fa-search {
+
+	position: absolute;
+	top: 20px;
+	left: 16px;
+
+}
+
+.search button {
+
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	height: 50px;
+	width: 110px;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+
+ body{
+	background-color: #d4d5dadd;
+	font-family: 'Heebo', sans-serif;
+}
+
+
+#CardWrapper {
+	width: 350px;
+    opacity: 0.9;
+    box-shadow: 2px 6px 10px rgb(92, 92, 92);
+	border: none;
+	border-radius: 20px;
+	height: 89vh;
+}
+
+.form-control {
+	border-radius: 7px;
+	border: 1.5px solid #E3E6ED;
+}
+
+input.form-control:focus {
+	box-shadow: none;
+	border: 1.5px solid #E3E6ED;
+	background-color: #F7F8FD;
+	letter-spacing: 1px;
+}
+
+.btn-primary {
+	background-color: red !important;
+	border-radius: 7px;
+	border-width: 2px;
+
+}
+
+.btn-primary:focus {
+	box-shadow: none;
+}
+
+.text {
+	font-size: 13px;
+	color: #8d9092;
+}
+.text-center{
+	font-size: 15px;
+	color: #f14848;
+}
+
+.flex-row {
+	border: 1px solid #e20c0c;
+	border-radius: 10px; 
+	margin: 0 px 0;
+}
+
+.flex-column p {
+	font-size: 14px;
+}
+
+span.mb-2 {
+	font-size: 12px;
+	color: #8896BD;
+}
+
+h5 span {
+	color: #869099;
+} 
+
+#LoadBtn {
+	float: right;
+	background: green!important;
+	border-color: rgb(1, 102, 1);
+	border-width: 2px;
+}
+
+#SearchBtn {
+	border-color: rgb(184, 1, 1);
+}
+
+#TaskTable {
+	width: 55.2em;
+	height: 82vh!important;
+}
+
+/* #MapTab {
+	color: white;
+	background-color: rgb(217, 1, 1);
+}
+
+#TaskTab::after {
+	color: white;
+	background-color: rgb(217, 1, 1);
+} */
+
+.nav-link {
+	border-radius: 10px 10px 00px 0px!important;
+}
+
+.ActiveTab {
+	color: white!important;
+	background-color: red!important;
+}
+
+@media screen and (max-width: 450px){
+	#CardWrapper {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+}

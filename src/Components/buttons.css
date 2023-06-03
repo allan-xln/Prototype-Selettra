@@ -10,8 +10,7 @@
 
 /* Estiliza o ícone "home" */
 .iconhome {
-
-    margin-left: 115px;
+    margin-left: 120px;
 }
 
 /* Estiliza o ícone "danger" */
@@ -38,9 +37,31 @@
     margin-bottom: 0px;
 }
 
+/* Media query para dispositivos móveis com largura máxima de 700px */
+@media (max-width: 700px) {
 
-/* Media query para dispositivos móveis */
-@media (max-width: 768px) {
+    /* Redefine o tamanho dos ícones para dispositivos móveis */
+    #icons {
+        font-size: 25px;
+        margin-top: 5px;
+    }
+
+    /* Ajusta o espaçamento dos ícones para dispositivos móveis */
+    .iconhome {
+        margin-left: 90px;
+    }
+
+    .icondanger,
+    .iconstatus,
+    .iconmapping,
+    .iconmaps {
+        margin-left: 10px;
+        margin-bottom: 0px;
+    }
+}
+
+/* Media query para dispositivos móveis com largura máxima de 600px */
+@media (max-width: 600px) {
 
     /* Redefine o tamanho dos ícones para dispositivos móveis */
     #icons {
@@ -49,30 +70,39 @@
 
     /* Ajusta o espaçamento dos ícones para dispositivos móveis */
     .iconhome {
-        margin-left: 75px;
+        margin-left: 70px;
     }
 
-    .icondanger {
-        margin-left: 10px;
-        margin-bottom: 0px;
-    }
-
-    .iconstatus {
-        margin-left: 10px;
-        margin-bottom: 0px;
-    }
-
-    .iconmapping {
-        margin-left: 10px;
-        margin-bottom: 0px;
-    }
-
+    .icondanger,
+    .iconstatus,
+    .iconmapping,
     .iconmaps {
         margin-left: 10px;
         margin-bottom: 0px;
     }
 }
 
+/* Media query para dispositivos móveis com largura máxima de 500px */
+@media (max-width: 500px) {
+
+    /* Redefine o tamanho dos ícones para dispositivos móveis */
+    #icons {
+        font-size: 18px;
+    }
+
+    /* Ajusta o espaçamento dos ícones para dispositivos móveis */
+    .iconhome {
+        margin-left: 70px;
+    }
+
+    .icondanger,
+    .iconstatus,
+    .iconmapping,
+    .iconmaps {
+        margin-left: 8px;
+        margin-bottom: 0px;
+    }
+}
 
 /*-------------------------------*/
 /*          NavBar Hovers        */
@@ -122,7 +152,6 @@
 }
 
 /* Adiciona um fundo escuro ao botão */
-
 .navBarHover:after {
     content: '';
     position: absolute;
@@ -135,7 +164,6 @@
     z-index: 2;
 }
 
-
 /* Posiciona o ícone centralizado dentro do botão */
 .navBarHover i {
     position: absolute;
@@ -144,6 +172,10 @@
     z-index: 3;
 }
 
+.active::after {
+    background: red;
+    z-index: 1;
+}
 
 /*-------------------------------*/
 /*              Other            */
@@ -151,28 +183,23 @@
 
 /* Outras definições de estilo podem ser adicionadas aqui */
 
-
 /* Exibe a dica de ferramenta quando o mouse passa por cima do ícone */
 .navBarHover i[title]:hover::before {
     opacity: 1;
     visibility: visible;
 }
 
-/* Defines the attributes of the Selettra Logo2 */
-
+/* Define os atributos do Selettra Logo2 para telas menores */
 @media only screen and (max-width: 812px) {
     .selettra {
-        display: flexbox;
+        display: flex;
         float: right;
         margin-top: 15px;
         height: 28px;
         cursor: pointer;
         display: none;
-
     }
 }
-
-
 
 .selettra {
     display: flexbox;
@@ -181,5 +208,4 @@
     padding-right: 1em;
     height: 1.5em;
     cursor: pointer;
-
 }
