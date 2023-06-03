@@ -67,7 +67,7 @@ body {
     box-shadow: 2px 6px 10px rgb(92, 92, 92);
 	border: none;
 	border-radius: 20px;
-	height: 90vh;
+	height: 89vh;
 }
 .form-control{
 	border-radius: 7px;
@@ -121,6 +121,25 @@ h5 span{
 
 #SearchBtn {
 	border-color: rgb(184, 1, 1);
+}
+
+#TaskTable {
+	width: 55.2em;
+	height: 82vh!important;
+}
+
+#MapTab {
+	color: white;
+	background-color: rgb(217, 1, 1);
+}
+
+.activeTab {
+	color: white;
+	background-color: rgb(217, 1, 1);
+}
+
+.page-link {
+	color: red,
 }
 
 @media screen and (max-width: 450px){

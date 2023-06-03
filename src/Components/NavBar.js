@@ -10,8 +10,6 @@ import Selettra from './Selettra';
 
 const NavBar = () => {
 
-    
-
     return (
         <>
             <Router>
