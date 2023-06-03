@@ -1,10 +1,21 @@
 import React, { useState } from 'react';
+import Modal from '../pages/help/Modal';
+import '../pages/help/modal.css';
 
 const SideBar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [showModal, setShowModal] = useState(false);
 
     const toggleSidebar = () => {
         setIsOpen(!isOpen);
+    };
+
+    const openModal = () => {
+        setShowModal(true);
+    };
+
+    const closeModal = () => {
+        setShowModal(false);
     };
 
     return (
@@ -13,7 +24,7 @@ const SideBar = () => {
                 {/* Botão de menu hamburguer */}
                 <button
                     type="button"
-                    id='Hamburguer'
+                    id="Hamburguer"
                     className={`hamburger animated fadeInLeft ${isOpen ? 'is-open' : 'is-closed'}`}
                     data-toggle="offcanvas"
                     onClick={toggleSidebar}
@@ -41,20 +52,20 @@ const SideBar = () => {
 
                         <li>
                             {/* Ícone de ajuda */}
-                            <button id="icons-sidebar" className="custom-button">
+                            <button id="icons-sidebar" className="custom-button" onClick={openModal}>
                                 <i className="bi bi-question-circle"></i> Ajuda
                             </button>
                         </li>
                     </ul>
 
-                    <ul>
-                        {/* Botão de sair */}
-                        <div className="exit-button">
-                            <button className="btn btn-outline-light btn-block">
-                                <i className="bi bi-box-arrow-right"></i> Sair
-                            </button>
-                        </div>
-                    </ul>
+                    {/* Botão de sair */}
+                    <div className="exit-button">
+                        <button className="btn btn-outline-light btn-block">
+                            <i className="bi bi-box-arrow-right"></i> Sair
+                        </button>
+                    </div>
+
+                    {showModal && <Modal closeModal={closeModal} />}
                 </nav>
             </div>
         </>

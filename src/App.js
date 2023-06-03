@@ -6,8 +6,7 @@ import './pages/Home/Home';
 import './Components/buttons.css';
 import './index.js';
 import './Components/script.js';
-import './pages/Reports/Reports.css'
-import './pages/Home/homepage.css'
+import './pages/pages.css';
 
 
 function App() {

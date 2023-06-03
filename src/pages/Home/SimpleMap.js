@@ -24,13 +24,13 @@ export function SimpleMap() {
       <div className="card-header" style={{ border: "transparent", background: "transparent" , borderRadius:'10px'}}>
         <ul className="nav nav-tabs card-header-tabs" role="tablist">
           <li className="nav-item" >
-            <a id='TaskTab' className={`nav-link active ${activeTab === 'Tarefas' ? 'active' : ''}`} href="#Tarefas" role="tab" aria-controls="Tarefas" aria-selected="true"
+            <a style={{ borderRadius:""}}id='TaskTab' className={`nav-link active ${activeTab === 'Tarefas' ? 'active ActiveTab' : ''}`} href="#Tarefas" role="tab" aria-controls="Tarefas" aria-selected="true"
                onClick={(e) => handleTabClick(e, 'Tarefas')}>
               Tarefas
             </a>
           </li>
           <li className="nav-item">
-            <a id='MapTab' className={`nav-link ${activeTab === 'Mapa' ? 'active' : ''}`} href="#Mapa" role="tab" aria-controls="Mapa" aria-selected="false" onClick={(e) => handleTabClick(e, 'Mapa')}>
+            <a id='MapTab' className={`nav-link active ${activeTab === 'Mapa' ? 'active ActiveTab' : ''}`} href="#Mapa" role="tab" aria-controls="Mapa" aria-selected="false" onClick={(e) => handleTabClick(e, 'Mapa')}>
               Mapa
             </a>
           </li>
