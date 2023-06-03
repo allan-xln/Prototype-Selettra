@@ -1,36 +1,38 @@
-export default function History() {
-    return (
-        <div
-        style={{
-            display: 'flex',
-            flexDirection: "column",
-            alignItems: 'center',
-            alignContent: 'Center',
-            justifyContent: 'center',
-            height: '38vh',
-            paddingLeft: '15%',
-            paddingRight: '15%',
-            
-            }}>
-            <h1 style={{paddingBottom: "30px"}}>Histórico:</h1>
-            <table class="table table-responsive table-bordered table-hover">
-            <thead class="table-dark">
-                <tr>
-                <th scope="col">Data</th>
-                <th scope="col">Horário</th>
-                <th scope="col">Mensagem</th>
-                </tr>
-            </thead>
-                <tbody style={{opacity: "100%"}} class="table-light">
-                <tr>
-                <td>ALERTA</td>
-                <td>GRAVANDO MAPA</td>
-                <td>OCORRE QUANDO É INICIADA A GRAVAÇÃO DE UM MAPA</td>
-                </tr>
-            </tbody>
-            </table>
-        </div>
+import React from 'react';
 
-    
-    )
+export default function Home() {
+    return (
+        <div className="container d-flex justify-content-center">
+            <div className="card mt-5 p-5 custom-card-width">
+                <div className="input-group mb-3">
+                    {/* Conteúdo do input-group */}
+                </div>
+
+                <div>
+                    <h3>Histórico</h3>
+
+                    <table className="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Tipo</th>
+                                <th scope="col">Descrição</th>
+                                <th scope="col">Comentário</th>
+                                <th scope="col">Solução</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>ALERTA</td>
+                                <td>GRAVANDO MAPA</td>
+                                <td>OCORRE QUANDO É INICIADA A GRAVAÇÃO DE UM MAPA</td>
+                                <td>ALERTA INFORMATIVO</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    );
 }

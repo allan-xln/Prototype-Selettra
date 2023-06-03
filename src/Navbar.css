@@ -73,8 +73,8 @@ html {
 
 /* Estilos para o botão de saída */
 .exit-button {
-    padding-top: 70vh;
-    padding-left: 25vh;
+    padding-top: 72vh;
+    padding-left: 21vh;
 }
 
 /*-------------------------------*/
@@ -96,7 +96,6 @@ html {
 
 #sidebar-wrapper {
     top: 69px;
-    z-index: 1000;
     left: 22vh;
     width: 0;
     height: 100%;
@@ -227,16 +226,10 @@ html {
 /*-------------------------------*/
 
 
-@media only screen and (max-width: 320px) {
-    .hamburguer {
-        height: 10px;
-        margin-left: 5px;
-        text-align: top;
-    }
-}
 .hamburger {
     position: fixed;
-    top: 29px;
+    top: 1.5em;
+    bottom: 1.5em;
     z-index: 9999;
     display: block;
     width: 30px;
@@ -245,6 +238,7 @@ html {
     background: transparent;
     border: none;
 }
+
 
 .hamburger:hover,
 .hamburger:focus,
@@ -301,7 +295,7 @@ html {
 }
 
 .hamburger.is-closed .hamb-bottom {
-    bottom: 5px;
+    bottom: 7px;
     -webkit-transition: all .35s ease-in-out;
 }
 
@@ -359,4 +353,26 @@ html {
     display: block;
     -webkit-transform: translate3d(-100px, 0, 0);
     -webkit-transition: all .35s ease-in-out;
+}
+
+
+@media (max-width: 700px) {
+    .hamburger {
+        /* Estilos para telas menores que 414px de largura */
+        /* Por exemplo, você pode reduzir o tamanho e alterar o posicionamento */
+        width: 22px;
+        height: 22px;
+    }
+
+    .hamburger.is-closed .hamb-top,
+    .hamburger.is-closed .hamb-middle,
+    .hamburger.is-closed .hamb-bottom,
+    .hamburger.is-open .hamb-top,
+    .hamburger.is-open .hamb-middle,
+    .hamburger.is-open .hamb-bottom {
+        position: absolute;
+        left: 0;
+        height: 0.10em;
+        width: 100%;
+    }
 }
