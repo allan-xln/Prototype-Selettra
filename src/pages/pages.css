@@ -67,8 +67,19 @@ body {
     box-shadow: 2px 6px 10px rgb(92, 92, 92);
 	border: none;
 	border-radius: 20px;
-	height: 89vh;
+	height: 88vh;
 }
+
+#CardWrapper2 {
+	width: 200px;
+    opacity: 0.9;
+    box-shadow: 2px 6px 10px rgb(92, 92, 92);
+	border: none;
+	border-radius: 20px;
+	height: 32vh;
+
+}
+
 
 .form-control {
 	border-radius: 7px;
@@ -162,4 +173,58 @@ h5 span {
 		justify-content: center;
 		text-align: center;
 	}
+}
+
+#home.selected:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: red;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.custom-card-width {
+	width: 100em;
+}
+
+.custom-card-width h3 {
+	text-align: center;
+	padding-bottom: 1.3em;
+}
+
+#MappingBtn {
+	float: right;
+	color: WHITE;
+	background-color: red;
+	border-color: rgb(204, 3, 3);
+	border-width: 2px;
+	box-shadow: 2px 3px 10px rgb(92, 92, 92);
+}
+
+#StatusCard {
+	width: 200px;
+    opacity: 0.9;
+    box-shadow: 2px 6px 10px rgb(92, 92, 92);
+	border: none;
+	border-radius: 20px;
+	height: 49vh;
+	margin-top: 2vh;
+	align-items: center;
+}
+
+.AGV_IMG {
+	height: 100px;
+	width: 120px;
+	border: none;
+}
+
+#StatusIndicator {
+	border-color: rgb(1, 106, 1);
+	color: white;
+	background-color: rgb(2, 162, 2);
+	width: 110px;
 }
