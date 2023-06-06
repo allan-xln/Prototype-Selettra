@@ -55,7 +55,7 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
 
- body{
+body {
 	background-color: #d4d5dadd;
 	font-family: 'Heebo', sans-serif;
 }
@@ -63,8 +63,8 @@ body {
 
 #CardWrapper {
 	width: 350px;
-    opacity: 0.9;
-    box-shadow: 2px 6px 10px rgb(92, 92, 92);
+	opacity: 0.9;
+	box-shadow: 2px 6px 10px rgb(92, 92, 92);
 	border: none;
 	border-radius: 20px;
 	height: 89vh;
@@ -97,14 +97,15 @@ input.form-control:focus {
 	font-size: 13px;
 	color: #8d9092;
 }
-.text-center{
+
+.text-center {
 	font-size: 15px;
 	color: #f14848;
 }
 
 .flex-row {
 	border: 1px solid #e20c0c;
-	border-radius: 10px; 
+	border-radius: 10px;
 	margin: 0 px 0;
 }
 
@@ -119,11 +120,11 @@ span.mb-2 {
 
 h5 span {
 	color: #869099;
-} 
+}
 
 #LoadBtn {
 	float: right;
-	background: green!important;
+	background: green !important;
 	border-color: rgb(1, 102, 1);
 	border-width: 2px;
 }
@@ -134,7 +135,7 @@ h5 span {
 
 #TaskTable {
 	width: 55.2em;
-	height: 82vh!important;
+	height: 82vh !important;
 }
 
 /* #MapTab {
@@ -148,15 +149,15 @@ h5 span {
 } */
 
 .nav-link {
-	border-radius: 10px 10px 00px 0px!important;
+	border-radius: 10px 10px 00px 0px !important;
 }
 
 .ActiveTab {
-	color: white!important;
-	background-color: red!important;
+	color: white !important;
+	background-color: red !important;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px) {
 	#CardWrapper {
 		display: flex;
 		justify-content: center;
