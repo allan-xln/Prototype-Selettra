@@ -5,6 +5,7 @@ import Reports from '../pages/Reports/Reports';
 import History from '../pages/History/History';
 import Logo from '../pages/assets/selettra-Logo (2).png';
 import Selettra from './Selettra';
+import { Mapping } from '../pages/Mapping/Mapping';
 
 const NavBar = () => {
     const [activeTab, setActiveTab] = useState('');
@@ -50,13 +51,16 @@ const NavBar = () => {
                     </Link>
 
                     {/* Botão com ícone de bússola */}
-                    <button
-                        style={{ width: '50px', minWidth: '50px' }}
-                        className="navBarHover iconmapping"
-                        type="button"
-                    >
-                        <i className="bi bi-compass" title="Localização"></i>
-                    </button>
+                    <Link to="/Mapping">
+                        <button
+                            style={{ width: '50px', minWidth: '50px' }}
+                            className={`navBarHover iconmapping ${activeTab === '/Mapping' ? 'active' : ''}`}
+                            onClick={() => setActiveTab('/Mapping')}
+                            type="button"
+                        >
+                            <i className="bi bi-compass" title="Localização"></i>
+                        </button>
+                    </Link>
 
                     {/* Botão com ícone de mapa */}
                     <button
@@ -76,6 +80,7 @@ const NavBar = () => {
                 <Route path='/Reports' element={<Reports />} />
                 <Route path='/History' element={<History />} />
                 <Route path='/Selettra' element={<Selettra />} />
+                <Route path='/Mapping' element={<Mapping />} />
             </Routes>
         </Router>
     );

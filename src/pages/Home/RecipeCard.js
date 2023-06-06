@@ -1,6 +1,6 @@
 export function RecipeCard() {
     return (
-        <div id='RecipeCard' className="container-fluid ps-0 ms-2 mt-1 justify-content-left">
+        <div id='RecipeCard' className="container-fluid ps-0 ms-3 mt-1 justify-content-left">
             <div id='CardWrapper'className="card mt-0 p-4">
                 <div className="input-group mb-3">
                     <input placeholder="Escolha uma Receita" type="text" className="form-control" />

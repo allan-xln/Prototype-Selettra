@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Home() {
+export default function Reports() {
     return (
         <div className="container d-flex justify-content-center">
             <div className="card mt-5 p-5 custom-card-width">
