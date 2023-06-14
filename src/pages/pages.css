@@ -71,13 +71,22 @@ body {
 }
 
 #CardWrapper2 {
+	width: 210px;
+    opacity: 0.9;
+    box-shadow: 2px 6px 10px rgb(92, 92, 92);
+=======
 	width: 200px;
 	opacity: 0.9;
 	box-shadow: 2px 6px 10px rgb(92, 92, 92);
+}
+
+#CardWrapper3 {
+	width: 210px;
+    opacity: 0.9;
+    box-shadow: 2px 6px 10px rgb(92, 92, 92);
 	border: none;
 	border-radius: 20px;
-	height: 32vh;
-
+	height: 30vh;
 }
 
 
@@ -236,3 +245,29 @@ h5 span {
 	background-color: rgb(2, 162, 2);
 	width: 110px;
 }
+
+#RouteBtn {
+	color: white;
+    font-size: 23px;
+}
+
+#ButtonClass {
+	width: 40px;
+	margin-top: 15px;
+	margin-left: 15px;
+	border-radius: 10px;
+	background-color: red;	
+}
+
+#ButtonWrapper {
+	opacity: 0.9;
+    box-shadow: 2px 6px 10px rgb(92, 92, 92);
+	border: none;
+	border-radius: 20px;
+	justify-content: center;
+	margin-top: 2vh;
+	align-items: center;	
+	display: inline-block;
+	height: 60vh;
+}
+
