@@ -6,7 +6,7 @@ import AGV_IMG from '../assets/AGV_IMG.png'
 export function Mapping() {
     return (
         <>
-        <div id="mapContainer" className="justify-content-center ms-5 mt-2 me-4" style={{ float:"left"}}>
+        <div id="mapContainer" className="justify-content-center mt-2 me-4" style={{ marginLeft:"4vh", float:"left"}}>
             <SecondMap />
         </div>
             <div id='StatusCard' className="card p-4 mb-1" style={{ float: "left", width: "17%" }}>

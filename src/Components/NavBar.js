@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import Home from '../pages/Home/Home';
 import Reports from '../pages/Reports/Reports';
 import History from '../pages/History/History';
 import Logo from '../pages/assets/selettra-Logo (2).png';
 import Selettra from './Selettra';
+import RoutesMap from "../pages/RoutesMap/RoutesMap";
 import { Mapping } from '../pages/Mapping/Mapping';
 
 const NavBar = () => {
@@ -58,21 +59,26 @@ const NavBar = () => {
                             onClick={() => setActiveTab('/Mapping')}
                             type="button"
                         >
-                            <i className="bi bi-compass" title="Localização"></i>
+                            <i className="bi bi-compass" title="Mapeamento"></i>
                         </button>
                     </Link>
 
                     {/* Botão com ícone de mapa */}
-                    <button
-                        style={{ width: '50px', minWidth: '50px' }}
-                        className="navBarHover iconmaps"
-                        type="button"
-                    >
-                        <i className="bi bi-map" title="Mapeamentos"></i>
-                    </button>
+                    <Link to='/RoutesMap'>
+                        <button
+                            style={{ width: '50px', minWidth: '50px' }}
+                            className={`navBarHover iconmaps ${activeTab === '/RoutesMap' ? 'active' : ''}`}
+                            type="button"
+                            onClick={() => setActiveTab('/RoutesMap')}
+                        >
+                            <i className="bi bi-map" title="Routes Map"></i>
+                        </button>
+                    </Link>
+
                     <Link to='/Selettra' target="_blank">
                         <img className="selettra" src={Logo} alt="Logo"></img>
                     </Link>
+                    
                 </div>
             </div>
             <Routes>
@@ -81,6 +87,7 @@ const NavBar = () => {
                 <Route path='/History' element={<History />} />
                 <Route path='/Selettra' element={<Selettra />} />
                 <Route path='/Mapping' element={<Mapping />} />
+                <Route path='/RoutesMap' element={<RoutesMap />} />
             </Routes>
         </Router>
     );

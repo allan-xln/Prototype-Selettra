@@ -29,6 +29,55 @@ export default function History() {
                                 <td>OCORRE QUANDO É INICIADA A GRAVAÇÃO DE UM MAPA</td>
                                 <td>ALERTA INFORMATIVO</td>
                             </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>ALERTA</td>
+                                <td>GRAVANDO MAPA</td>
+                                <td>OCORRE QUANDO É INICIADA A GRAVAÇÃO DE UM MAPA</td>
+                                <td>ALERTA INFORMATIVO</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>ALERTA</td>
+                                <td>GRAVANDO MAPA</td>
+                                <td>OCORRE QUANDO É INICIADA A GRAVAÇÃO DE UM MAPA</td>
+                                <td>ALERTA INFORMATIVO</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>ALERTA</td>
+                                <td>GRAVANDO MAPA</td>
+                                <td>OCORRE QUANDO É INICIADA A GRAVAÇÃO DE UM MAPA</td>
+                                <td>ALERTA INFORMATIVO</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>ALERTA</td>
+                                <td>GRAVANDO MAPA</td>
+                                <td>OCORRE QUANDO É INICIADA A GRAVAÇÃO DE UM MAPA</td>
+                                <td>ALERTA INFORMATIVO</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>ALERTA</td>
+                                <td>GRAVANDO MAPA</td>
+                                <td>OCORRE QUANDO É INICIADA A GRAVAÇÃO DE UM MAPA</td>
+                                <td>ALERTA INFORMATIVO</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>ALERTA</td>
+                                <td>GRAVANDO MAPA</td>
+                                <td>OCORRE QUANDO É INICIADA A GRAVAÇÃO DE UM MAPA</td>
+                                <td>ALERTA INFORMATIVO</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>ALERTA</td>
+                                <td>GRAVANDO MAPA</td>
+                                <td>OCORRE QUANDO É INICIADA A GRAVAÇÃO DE UM MAPA</td>
+                                <td>ALERTA INFORMATIVO</td>
+                            </tr>   
                         </tbody>
                     </table>
                 </div>
