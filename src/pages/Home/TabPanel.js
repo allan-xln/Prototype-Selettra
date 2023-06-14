@@ -3,7 +3,7 @@ import GoogleMapReact from 'google-map-react';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-export function SimpleMap() {
+export function TabPanel() {
   const defaultProps = {
     center: {
       lat: 10.99835602,
@@ -179,27 +179,27 @@ export function SimpleMap() {
 
         <div className={`tab-pane ${activeTab === 'Mapa' ? 'active' : ''}`} id="Mapa" role="tabpanel" aria-labelledby="Mapa-tab">
         <div id="map" className='card-body pt-4 ps-4 pe-4 pb-4 justify-content-bottom'
-        style={{
-          display: 'flexbox',
-          boxShadow: '2px 6px 10px rgb(92, 92, 92)',
-          overflow: 'hidden', borderRadius: '20px',
-          float: 'right',
-          height: '80vh',
-          width: '139vh',
-          background: "white",
-        }}>
-          
-      <GoogleMapReact
-        bootstrapURLKeys={{ key: "" }}
-        defaultCenter={defaultProps.center}
-        defaultZoom={defaultProps.zoom}
-      >
-        <AnyReactComponent
-            lat={-25.424893386368087}
-          lng={-49.276827554699246}
-          text="My Marker"
-        />
-      </GoogleMapReact>
+                style={{
+                display: 'flexbox',
+                boxShadow: '2px 6px 10px rgb(92, 92, 92)',
+                overflow: 'hidden', borderRadius: '20px',
+                float: 'right',
+                height: '80vh',
+                width: '139vh',
+                background: "white",
+                }}>
+                
+            <GoogleMapReact
+                bootstrapURLKeys={{ key: "" }}
+                defaultCenter={defaultProps.center}
+                defaultZoom={defaultProps.zoom}
+            >
+                <AnyReactComponent
+                    lat={-25.424893386368087}
+                lng={-49.276827554699246}
+                text="My Marker"
+                />
+            </GoogleMapReact>
           </div>
         </div>
       </div>

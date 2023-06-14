@@ -5,11 +5,12 @@ body {
     position: relative;
     overflow-x: hidden;
     background-color: #CFD8DC;
+    padding-top: 80px;
     /* Removido segundo background-color repetido */
     /* background-color: #cccccc; */
 }
 
-/* Background da página */
+/* Background da pÃ¡gina */
 body::before {
     content: "";
     display: block;
@@ -33,7 +34,7 @@ html {
 }
 
 
-/* Estilos para navegação lateral */
+/* Estilos para navegaÃ§Ã£o lateral */
 .nav .open>a,
 .nav .open>a:hover,
 .nav .open>a:focus {
@@ -44,13 +45,13 @@ html {
 /*     SideBar Organization      */
 /*-------------------------------*/
 
-/* Estilos para itens da navegação lateral */
+/* Estilos para itens da navegaÃ§Ã£o lateral */
 .nav.sidebar-nav li {
     height: 30px;
     margin-bottom: 21px;
 }
 
-/* Estilos para ícones da navegação lateral */
+/* Estilos para Ã­cones da navegaÃ§Ã£o lateral */
 #icons-sidebar {
     padding-top: 5px;
     padding-left: 9vh;
@@ -62,34 +63,46 @@ html {
     font-family: 'YouTube Sans Dark', sans-serif;
 }
 
-/* Estilos para botões personalizados */
+/* Estilos para botÃµes personalizados */
 .custom-button {
-    /* Remove os estilos padrão */
+    /* Remove os estilos padrÃ£o */
     background: none;
     border: none;
     outline: none;
     cursor: pointer;
 }
 
-/* Estilos para o botão de saída */
+/* Estilos para o botÃ£o de saÃ­da */
 .exit-button {
     padding-top: 72vh;
-    padding-left: 21vh;
+    padding-left: 26vh;
 }
 
 /*-------------------------------*/
 /*           Wrappers            */
 /*-------------------------------*/
 
-/* versão otimizada */
+/* versÃ£o otimizada */
 #nav-top {
     padding-bottom: 2vh;
     padding-top: 1vh;
     color: white;
     background-color: #1a1a1a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+
+}
+
+.content {
+    margin-top: 80px;
+    /* Ajuste o valor conforme necessÃ¡rio */
 }
 
 #wrapper {
+    padding-bottom: 100px;
     padding-left: 0;
     transition: all 0.5s ease;
 }
@@ -122,7 +135,6 @@ html {
 /*     Sidebar nav styles        */
 /*-------------------------------*/
 
-.navbar,
 .sidebar-nav {
     padding: 0;
 }
@@ -359,7 +371,7 @@ html {
 @media (max-width: 700px) {
     .hamburger {
         /* Estilos para telas menores que 414px de largura */
-        /* Por exemplo, você pode reduzir o tamanho e alterar o posicionamento */
+        /* Por exemplo, vocÃª pode reduzir o tamanho e alterar o posicionamento */
         width: 22px;
         height: 22px;
     }
