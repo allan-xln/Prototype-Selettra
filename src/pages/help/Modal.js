@@ -6,11 +6,17 @@ const Modal = ({ closeModal }) => {
             <div className="modal-content d-flex align-items-center justify-content-center">
                 <div className="card mt-5 p-3 custom-modal">
                     <div className="modal-header">
-                        <h3 className="modal-title">Ajuda</h3>
+
+                        <h3>Ajuda</h3>
+
+
                         <button type="button" className="close" onClick={closeModal}>
-                            <span aria-hidden="true">&times;</span>
                         </button>
+
+
                     </div>
+
+
                     <div className="modal-body" >
 
                         <h5>Dúvida 1 - Exemplo</h5>

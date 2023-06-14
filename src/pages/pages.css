@@ -55,7 +55,7 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
 
- body{
+body {
 	background-color: #d4d5dadd;
 	font-family: 'Heebo', sans-serif;
 }
@@ -63,8 +63,8 @@ body {
 
 #CardWrapper {
 	width: 350px;
-    opacity: 0.9;
-    box-shadow: 2px 6px 10px rgb(92, 92, 92);
+	opacity: 0.9;
+	box-shadow: 2px 6px 10px rgb(92, 92, 92);
 	border: none;
 	border-radius: 20px;
 	height: 88vh;
@@ -72,8 +72,8 @@ body {
 
 #CardWrapper2 {
 	width: 200px;
-    opacity: 0.9;
-    box-shadow: 2px 6px 10px rgb(92, 92, 92);
+	opacity: 0.9;
+	box-shadow: 2px 6px 10px rgb(92, 92, 92);
 	border: none;
 	border-radius: 20px;
 	height: 32vh;
@@ -108,14 +108,15 @@ input.form-control:focus {
 	font-size: 13px;
 	color: #8d9092;
 }
-.text-center{
+
+.text-center {
 	font-size: 15px;
 	color: #f14848;
 }
 
 .flex-row {
 	border: 1px solid #e20c0c;
-	border-radius: 10px; 
+	border-radius: 10px;
 	margin: 0 px 0;
 }
 
@@ -130,11 +131,11 @@ span.mb-2 {
 
 h5 span {
 	color: #869099;
-} 
+}
 
 #LoadBtn {
 	float: right;
-	background: green!important;
+	background: green !important;
 	border-color: rgb(1, 102, 1);
 	border-width: 2px;
 }
@@ -144,9 +145,11 @@ h5 span {
 }
 
 #TaskTable {
-	width: 55.2em;
-	height: 82vh!important;
+	width: 55em;
+	height: 33em;
 }
+
+
 
 /* #MapTab {
 	color: white;
@@ -159,36 +162,41 @@ h5 span {
 } */
 
 .nav-link {
-	border-radius: 10px 10px 00px 0px!important;
+	border-radius: 10px 10px 00px 0px !important;
 }
 
 .ActiveTab {
-	color: white!important;
-	background-color: red!important;
+	color: white !important;
+	background-color: red !important;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px) {
 	#CardWrapper {
 		display: flex;
 		justify-content: center;
 		text-align: center;
 	}
+
 }
 
 #home.selected:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: red;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-    z-index: 2;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: red;
+	left: 0;
+	top: 0;
+	border-radius: 10px;
+	z-index: 2;
 }
 
 .custom-card-width {
 	width: 100em;
+	opacity: 0.9;
+	box-shadow: 2px 6px 10px rgb(92, 92, 92);
+	border: none;
+	border-radius: 20px;
 }
 
 .custom-card-width h3 {
@@ -207,8 +215,8 @@ h5 span {
 
 #StatusCard {
 	width: 200px;
-    opacity: 0.9;
-    box-shadow: 2px 6px 10px rgb(92, 92, 92);
+	opacity: 0.9;
+	box-shadow: 2px 6px 10px rgb(92, 92, 92);
 	border: none;
 	border-radius: 20px;
 	height: 49vh;
